@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <title>Catan Randomizer</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="catandomizer.js"></script>
+    </head>
+    <body>
+        <div class="row-9 contains-hex-grid">
+            <svg width="100%" height="100%" viewBox="0 0 866 800" id="hex-grid">
+                <polygon id="hex-0" points="259.8,0 346.6,50 346.4,150 259.8,200 173.2,150 173.2,50"/>
+                <polygon id="hex-1" points="433,0 519.6,50 519.6,150 433,200 346.4,150 346.4,50"/>
+                <polygon id="hex-2" points="606.2,0 692.8,50 692.8,150 606.2,200 519.6,150 519.6,50"/>
+                <polygon id="hex-3" points="173.2,150 259.8,200 259.8,300 173.2,350 86.6,300 86.6,200"/>
+                <polygon id="hex-4" points="346.4,150 433,200 433,300 346.4,350 259.8,300 259.8,200"/>
+                <polygon id="hex-5" points="519.6,150 606.2,200 606.2,300 519.6,350 433,300 433,200"/>
+                <polygon id="hex-6" points="692.8,150 779.4,200 779.4,300 692.8,350 606.2,300 606.2,200"/>
+                <polygon id="hex-7" points="86.6,300 173.2,350 173.2,450 86.6,500 0,450 0,350"/>
+                <polygon id="hex-8" points="259.8,300 346.6,350 346.4,450 259.8,500 173.2,450 173.2,350"/>
+                <polygon id="hex-9" points="433,300 519.6,350 519.6,450 433,500 346.4,450 346.4,350"/>
+                <polygon id="hex-10" points="606.2,300 692.8,350 692.8,450 606.2,500 519.6,450 519.6,350"/>
+                <polygon id="hex-11" points="779.4,300 866,350 866,450 779.4,500 692.8,450 692.8,350"/>
+                <polygon id="hex-12" points="173.2,450 259.8,500 259.8,600 173.2,650 86.6,600 86.6,500"/>
+                <polygon id="hex-13" points="346.4,450 433,500 433,600 346.4,650 259.8,600 259.8,500"/>
+                <polygon id="hex-14" points="519.6,450 606.2,500 606.2,600 519.6,650 433,600 433,500"/>
+                <polygon id="hex-15" points="692.8,450 779.4,500 779.4,600 692.8,650 606.2,600 606.2,500"/>
+                <polygon id="hex-16" points="259.8,600 346.6,650 346.4,750 259.8,800 173.2,750 173.2,650"/>
+                <polygon id="hex-17" points="433,600 519.6,650 519.6,750 433,800 346.4,750 346.4,650"/>
+                <polygon id="hex-18" points="606.2,600 692.8,650 692.8,750 606.2,800 519.6,750 519.6,650"/>
+            </svg>
+        </div>
+        <div class="row-1 offset-9">
+            <button class="btn center" onclick="Catandomizer.randomize()">Randomize</button>
+        </div>
+        <div class="row-1 offset-10">
+            <div class="desert-option"><input type="checkbox" id="desert-edge" checked><div class="label">Keep the desert on an edge</div></div>
+            <div class="limit-clusters"><input type="checkbox" id="limit-clusters" checked><div class="label">Limit resource clustering</div></div>
+            <div class="image-option"><input type="checkbox" id="image-option"><div class="label">Show images</div></div>
+        </div>
+    </body>
+    <svg id='pattern' xmlns="http://www.w3.org/2000/svg" version="1.1">
+		  <defs>
+		    <pattern id='desert' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+		      <image xlink:href='/images/desert.png' width="100" height="100" preserveAspectRatio="none"></image>
+		    </pattern>
+		    <pattern id='brick' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+		      <image xlink:href='/images/brick.png' width="100" height="100" preserveAspectRatio="none"></image>
+		    </pattern>
+		    <pattern id='wood' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+		      <image xlink:href='/images/wood.png' width="100" height="100" preserveAspectRatio="none"></image>
+		    </pattern>
+		    <pattern id='wheat' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+		      <image xlink:href='/images/wheat.png' width="100" height="100" preserveAspectRatio="none"></image>
+		    </pattern>
+		    <pattern id='rock' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+		      <image xlink:href='/images/rock.png' width="100" height="100" preserveAspectRatio="none"></image>
+		    </pattern>
+		    <pattern id='sheep' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+		      <image xlink:href='/images/sheep.png' width="100" height="100" preserveAspectRatio="none"></image>
+		    </pattern>
+		  </defs>
+		</svg>
+</html>

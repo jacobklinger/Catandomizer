@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    min-height: 480px;
+    overflow: scroll;
+}
+
+.row-1 {height: 8.33%;}
+.row-2 {height: 16.66%;}
+.row-3 {height: 25%;}
+.row-4 {height: 33.33%;}
+.row-5 {height: 41.66%;}
+.row-6 {height: 50%;}
+.row-7 {height: 58.33%;}
+.row-8 {height: 66.66%;}
+.row-9 {height: 75%;}
+.row-10 {height: 83.33%;}
+.row-11 {height: 91.66%;}
+.row-12 {height: 100%;}
+
+.offset-1 {top: 8.33%;}
+.offset-2 {top: 16.66%;}
+.offset-3 {top: 25%;}
+.offset-4 {top: 33.33%;}
+.offset-5 {top: 41.66%;}
+.offset-6 {top: 50%;}
+.offset-7 {top: 58.33%;}
+.offset-8 {top: 66.66%;}
+.offset-9 {top: 75%;}
+.offset-10 {top: 83.33%;}
+.offset-11 {top: 91.66%;}
+.offset-12 {top: 100%;}
+
+[class*="row-"] {
+    position: absolute;
+    width: 100%;
+    content: "";
+    clear: both;
+    text-align: center;
+}
+
+[class*="col-"] {
+    position: absolute;
+    float: left;
+    padding: 15px;
+}
+
+.contains-hex-grid {
+	padding: 25px;
+}
+
+.svg-container {
+    padding: 0 10px 0 10px;
+    position: relative;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, 0%);
+}
+
+button:focus {
+	outline-color: transparent;
+  outline-style: none;
+}
+
+.btn:active {
+	background: #930010;
+}
+
+.btn {
+    color: white;
+    background: #b52232;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Open Sans';
+    font-size: 90%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input {
+    display: inline-block;
+}
+
+
+.label {
+    display: inline;
+    font-size: 90%;
+}
+
+polygon {
+    fill: #eee;
+    stroke: #fff;
+    stroke-width:1;
+}
+
+[terrain="wood"][image="true"] {
+    fill: url(#wood);
+}
+
+[terrain="sheep"][image="true"] {
+    fill: url(#sheep);
+}
+
+[terrain="rock"][image="true"] {
+    fill: url(#rock);
+}
+
+[terrain="wheat"][image="true"] {
+    fill: url(#wheat);
+}
+
+[terrain="brick"][image="true"] {
+    fill: url(#brick);
+}
+
+[terrain="desert"][image="true"] {
+    fill: url(#desert);
+}
+
+[terrain="wood"] {
+    fill: #0b8340;
+}
+
+[terrain="sheep"] {
+    fill: #a6ce4a;
+}
+
+[terrain="rock"] {
+    fill: #455146;
+}
+
+[terrain="wheat"] {
+    fill: #eea82b;
+}
+
+[terrain="brick"] {
+    fill: #9a4325;
+}
+
+[terrain="desert"] {
+    fill: #e0d590;
+}
+
